@@ -1,0 +1,391 @@
+@InProceedings{Bartsch2010,
+  author    = {Bartsch, Sebastian and Birnschein, Timo and Cordes, Florian and Kuehn, Daniel and Kampmann, Peter and Hilljegerdes, Jens and Planthaber, Steffen and Roemmermann, Malte and Kirchner, Frank},
+  booktitle = {ISR 2010 (41st International Symposium on Robotics) and ROBOTIK 2010 (6th German Conference on Robotics)},
+  title     = {SpaceClimber: Development of a Six-Legged Climbing Robot for Space Exploration},
+  year      = {2010},
+  month     = {June},
+  pages     = {1-8},
+  abstract  = {In this paper, we present the SpaceClimber integration study, a six-legged, bio-inspired, energy-efficient, and adaptable free-climbing robot for mobility in steep gradients. The long-term vision is to provide a system for the purpose of extraterrestrial surface exploration missions paying special attention to mobility in lunar craters in order to retrieve or analyze scientific samples from the interior of these craters. We present an envisaged mission for SpaceClimber and give a description of the system's morphology and the design steps. Apart from hardware design, parts of the control software as well as the utilization of evolutionary algorithms for both morphology design and locomotion control are presented.},
+  groups    = {Robot},
+  url       = {https://ieeexplore.ieee.org/abstract/document/5756948},
+}
+
+@Article{Bartsch2014,
+  author    = {Bartsch, Sebastian},
+  journal   = {KI-K{\"u}nstliche Intelligenz},
+  title     = {Development, control, and empirical evaluation of the six-legged robot SpaceClimber designed for extraterrestrial crater exploration},
+  year      = {2014},
+  number    = {2},
+  pages     = {127--131},
+  volume    = {28},
+  abstract  = {In the recent past, mobile robots played an important role in the field of extraterrestrial surface exploration. Unfortunately, the currently available space exploration rovers do not provide the necessary mobility to reach scientifically interesting places in rough and steep terrain like boulder fields and craters. Multi-legged robots have proven to be a good solution to provide high mobility in unstructured environments. However, space missions place high demands on the system design, control, and performance which are hard to fulfill with such kinematically complex systems. My dissertation focuses on the development, control, and evaluation of a six-legged robot for the purpose of lunar crater exploration considering the requirements arising from the envisaged mission scenario. The performance of the developed system is evaluated and optimized based on empirical data acquired in significant and reproducible experiments performed in a laboratory environment in order to show the capability of the system to perform such a task and to provide a basis for the comparability with other mobile robotic solutions.},
+  groups    = {Robot},
+  publisher = {Springer},
+  url       = {https://link.springer.com/article/10.1007/s13218-014-0299-y#Abs1},
+}
+
+@Misc{spaceclimber,
+  author       = {{Deutsches Forschungszentrum für Künstliche Intelligenz, Robotics Innovation Center}},
+  howpublished = {\url{https://robotik.dfki-bremen.de/en/research/projects/spaceclimber.html}},
+  title        = {SpaceClimber - Climbing Robot for Exploration Missions in Extreme Terrain},
+  groups       = {Robot, Websites},
+}
+
+@InProceedings{Rommerman2009,
+  author    = {Rommerman, Malte and Kuhn, Daniel and Kirchner, Frank},
+  booktitle = {2009 IEEE Congress on Evolutionary Computation},
+  title     = {Robot design for space missions using evolutionary computation},
+  year      = {2009},
+  month     = {May},
+  pages     = {2098-2105},
+  abstract  = {In this work, we describe a learning system that uses the CMA-ES method from evolutionary computation to optimize the morphology and the walking patterns for a complex legged robot simultaneously. Using simulation tools has the advantage that an optimization of robot morphology is possible before actually building the robot. Also, manually developing walking patterns for kinematically complex robots can be a challenging and time-consuming task. Both, the walking pattern and the morphology depend highly on each other to produce an energy-efficient and stable locomotion behaviour. In order to automate this design process, a learning system that generates, tests, and optimizes different walking patterns and morphologies is needed, as well as the ability to accurately simulate a robot and its environment. The evolutionary algorithm optimizes parameters that affect the trajectories of the robot's foot points, testing the resulting walking patterns in a physical simulation. The robot's limbs are controlled using inverse kinematics. In the future, the best solution evolved by this approach will be used for the mechanical construction of the real robot. Afterwards, the optimized walking patterns will be transferred to the real robot.},
+  doi       = {10.1109/CEC.2009.4983200},
+  groups    = {Genetic_algorithm, Robot},
+  issn      = {1941-0026},
+}
+
+@Misc{mars,
+  author       = {{Deutsches Forschungszentrum für Künstliche Intelligenz, Robotics Innovation Center}},
+  howpublished = {\url{https://robotik.dfki-bremen.de/en/research/softwaretools/mars.html}},
+  title        = {MARS - Mobile Autonomous Robot Software},
+  groups       = {Software_platform, Websites},
+}
+
+@Misc{rock,
+  author       = {{Deutsches Forschungszentrum für Künstliche Intelligenz, Robotics Innovation Center}},
+  howpublished = {\url{https://robotik.dfki-bremen.de/de/forschung/softwaretools/rock.html}},
+  title        = {ROCK - Robot Construction Kit},
+  groups       = {Software_platform, Websites},
+}
+
+@Misc{Smith2007,
+  author = {Smith, Russell and others},
+  title  = {Open dynamics engine},
+  year   = {2007},
+  groups = {Software_platform, Websites},
+  url    = {www.ode.org},
+}
+
+@Article{Langosz2019,
+  author   = {Malte Langosz},
+  title    = {Evolutionary Legged Robotics},
+  year     = {2019},
+  abstract = {Due to the technological advance, robotic systems become more and more interesting for industrial and home applications. Popular examples are given by robotic lawn mower, robot vacuum cleaner, and package drones. Beside the toy industry, legged robots are not as popular, although they have some clear advantages compared to wheeled systems. With their flexibility concerning the locomotion, they are able to adapt their walking pattern to different environments. For instance they can walk over obstacles and gaps or climb over rubble and stairs. Another possible advantage could be a redundancy for locomotion. A faulty motor in one limb could be compensated by other motors in the kinematic chain. As well, multiple failing legs can be compensated by an adapted walking pattern. Compared to this, the more complex mechatronic systems represent a major challenge to the construction and the control. This thesis is dedicated to the control of complex walking robots. Genetic algorithms are applied to generate walking patterns for different robots. The evolutionary development of walking patterns is done in a simulation software. Results of various approaches are transferred and tested on existing systems which have been developed at RIC/DFKI. Different robotic systems are used to evaluate the generality of the applied methods. Eventually, a method is developed that can be utilized, with a few system specific modifications, for a variety of legged robots. As basis for the development and investigation of several methods, software tools are designed to generalize the application of applying genetic algorithms to legged locomotion. These tools include a simulation environment, a behavior representation, a genetic algorithm and a learning and benchmark framework. The simulation environment is adapted to the behavior of real robotic systems via reference experiments. In addition, the simulation is extended by a foot contact model for loose surfaces. The evaluation of the genetic algorithm is done on several benchmark problems and compared to three existing algorithms. This thesis contributes to the state of the art in many areas. The developed methodology can easily be applied to several complex robotic systems due to its transferability. The genetic algorithm and the hierarchical behavior representation provide a new opportunity to control the generation of the offspring in an evolutionary process. In addition, the developed software tools are an important contribution for their respective research fields.},
+  groups   = {Genetic_algorithm, Ground_interation_model, Software_platform, Robot, Neural Netwaork based},
+  url      = {https://media.suub.uni-bremen.de/handle/elib/1587},
+}
+
+@Misc{bolero,
+  author       = {{Deutsches Forschungszentrum für Künstliche Intelligenz, Robotics Innovation Center}},
+  howpublished = {\url{https://robotik.dfki-bremen.de/en/research/softwaretools/bolero.html}},
+  title        = {{Bolero}: Behavior Optimization and Learning for Robots},
+  groups       = {Software_platform, Genetic_algorithm, Websites},
+}
+
+@InProceedings{Grand2001,
+  author      = {Grand, Christophe and Ben Amar, Faiz and Bidaud, Philippe and Andrade, Guillermo},
+  booktitle   = {{4th International Conference on Climbing and Walking Robots (Clawar'01)}},
+  title       = {{A simulation system for behaviour evaluation of off-road mobile robots}},
+  year        = {2001},
+  address     = {Karlsruhe, Germany},
+  editor      = {Karsten Berns},
+  month       = Sep,
+  pages       = {307-314},
+  publisher   = {{Professional Engineering Publ.}},
+  series      = {Proceedings of the CLAWAR 2001 conference},
+  groups      = {Analytical approach, Ground_interation_model, Wheeled Robot},
+  hal_id      = {hal-03178091},
+  hal_version = {v1},
+  pdf         = {https://hal.science/hal-03178091/file/2001ACTI614.pdf},
+  url         = {https://hal.science/hal-03178091},
+}
+
+@InProceedings{Andrade1998,
+  author    = {Andrade, G. and Amar, F.B. and Bidaud, P. and Chatila, R.},
+  booktitle = {Proceedings. 1998 IEEE/RSJ International Conference on Intelligent Robots and Systems. Innovations in Theory, Practice and Applications (Cat. No.98CH36190)},
+  title     = {Modeling robot-soil interaction for planetary rover motion control},
+  year      = {1998},
+  month     = {Oct},
+  pages     = {576-581 vol.1},
+  volume    = {1},
+  abstract  = {In aim to optimize the control for an off-road robot and specially a robot with a crawling motion mode named peristaltical motion, it is essential to understand robot-soil interaction. We present an efficient method for simulating this interaction. This method can simulate the dynamic behavior of a 6-wheeled/3-axles Marsokhod type robot on different kinds of soils. With this simulation, we have defined the necessary conditions for using the peristaltical motion on sand or loose soil.},
+  doi       = {10.1109/IROS.1998.724680},
+  groups    = {Analytical approach, Ground_interation_model, Wheeled Robot},
+}
+
+@InProceedings{Yoshida2003,
+  author    = {Yoshida, Kazuya and Watanabe, Toshinobu and Mizuno, Noriyuki and Ishigami, Genya},
+  booktitle = {Proceedings of the 7th international symposium on Artificial intelligence, robotics and automation in Space, Nara, Japan},
+  title     = {Slip, traction control, and navigation of a lunar rover},
+  year      = {2003},
+  groups    = {Analytical approach, Ground_interation_model, Wheeled Robot},
+}
+
+@Article{Schmid1995,
+  author   = {Ingobert C. Schmid},
+  journal  = {Journal of Terramechanics},
+  title    = {Interaction of vehicle and terrain results from 10 years research at IKK},
+  year     = {1995},
+  issn     = {0022-4898},
+  number   = {1},
+  pages    = {3-26},
+  volume   = {32},
+  abstract = {The IKK research program comprises: &#x02022;⊎ experimental evaluation of terrain data and formulation of analytical models for soil properties&#x02022;⊎ development of models for the different soil-wheel interactions&#x02022;⊎ development of a highly sophisticated model, ORIS, for off-road interactive simulation of the driver-vehicle-terrain system and the utilization for vehicle development and mission optimization&#x02022;⊎ development of finite element methods, e.g. VENUS, and their utilization for multiple terramechanical problems. With these achievements, the team of scientists of the Institute of Automotive Engineering of the University of the Federal Armed Forces, Hamburg (IKK) could contribute essentially to the state of the art. It is the nature of scientific development that problems are recognized to be important and treated by several institutions in the world often at the same time. Also, in the case of the IKK research program, some problems may have been investigated in parallel by others. This indicates the actuality of the research program, and gives the chance for discussion and cooperation between the different scientific groups in the world, to ensure the dissemination of new pieces of knowledge.},
+  doi      = {https://doi.org/10.1016/0022-4898(95)00005-L},
+  groups   = {Analytical approach, Ground_interation_model, Wheeled Robot},
+  url      = {https://www.sciencedirect.com/science/article/pii/002248989500005L},
+}
+
+@InProceedings{Bauer2005,
+  author    = {Bauer, R. and Leung, W. and Barfoot, T.},
+  booktitle = {2005 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  title     = {Experimental and simulation results of wheel-soil interaction for planetary rovers},
+  year      = {2005},
+  month     = {Aug},
+  pages     = {586-591},
+  abstract  = {The ability to predict rover locomotion performance is critical during the design, validation and operational phases of a planetary robotic mission. Predicting locomotion performance depends on the ability to accurately characterize the wheel-soil interactions. In this research, wheel-soil interaction experiments were carried out on a single-wheel testbed and the results were compared with a single-wheel dynamic computer simulator which was developed in Matlab and Simulink's SimMechanics toolbox using a commercially-available wheel-soil interaction computer model called AESCO Soft Soil Tire Model (AS/sup 2/TM). Two different tire treads were used and compared in this study. There is good agreement between experimental and simulation results for wheel sinkage as a function of slip ratio; however, more investigation is needed to understand the differences observed for the drawbar pull and motor torque results.},
+  doi       = {10.1109/IROS.2005.1545179},
+  groups    = {Analytical approach, Ground_interation_model, Wheeled Robot},
+  issn      = {2153-0866},
+}
+
+@Article{Harnisch2005,
+  author  = {Harnisch, Carsten and Lach, Bjoern and Jakobs, Roland and Troulis, Markos and Nehls, Oliver},
+  journal = {Vehicle System Dynamics - VEH SYST DYN},
+  title   = {A new tyre–soil interaction model for vehicle simulation on deformable ground},
+  year    = {2005},
+  month   = {01},
+  pages   = {384-394},
+  volume  = {43},
+  doi     = {10.1080/00423110500139981},
+  groups  = {Ground_interation_model, Analytical approach, Wheeled Robot},
+}
+
+@InProceedings{Vanderkop2022,
+  author    = {Vanderkop, Anthony and Kottege, Navinda and Peynot, Thierry and Corke, Peter},
+  booktitle = {2022 International Conference on Robotics and Automation (ICRA)},
+  title     = {A Novel Model of Interaction Dynamics between Legged Robots and Deformable Terrain},
+  year      = {2022},
+  month     = {May},
+  pages     = {6635-6641},
+  abstract  = {Navigating natural environments with deformable terrain is a difficult challenge in robotics. Understanding the interaction dynamics between robots and such terrain is an important first step in enabling them to explore these environments. Terramechanics models are largely developed and tested on wheeled and tracked platforms, but with the advent of readily available lightweight legged robots, developing an understanding of how robot feet interact with the terrain becomes increasingly important. Works on estimating terramechanical properties of deformable sands and soils use an underlying assumption that translation of the robot foot along the surface of the terrain is due to internal shear deformation of the soil. We show that for lightweight legged robots, this is not the case. Shear forces acting on the foot of a robot during a stride are not accurately predicted by the widely-used Janosi-Hanamoto formula. We propose a new model in which two forces acting on the foot dominate the foot-terrain interaction - gross sliding friction and bulldozing resistance - and propose a model of how these forces act on the foot. We test this model on multiple soil types with different foot materials. Experimental data, collected on a testbench equipped with actuators and sensors identical to those deployed on a robot in the field, is used to validate our proposed model.},
+  doi       = {10.1109/ICRA46639.2022.9812351},
+  groups    = {Legged Robot, Analytical approach, Ground_interation_model},
+}
+
+@Article{Ding2013,
+  author    = {Ding, Liang and Gao, Haibo and Deng, Zongquan and Song, Jianhu and Liu, Yiqun and Liu, Guangjun and Iagnemma, Karl},
+  journal   = {The International Journal of Robotics Research},
+  title     = {Foot--terrain interaction mechanics for legged robots: Modeling and experimental validation},
+  year      = {2013},
+  number    = {13},
+  pages     = {1585--1606},
+  volume    = {32},
+  groups    = {Ground_interation_model, Analytical approach, Legged Robot},
+  publisher = {SAGE Publications Sage UK: London, England},
+}
+
+@InProceedings{Ahmed2011,
+  author    = {Ahmed, Mohammed and Quack, Lorenz and R{\"o}mmermann, Malte and Yoo, Yong-Ho},
+  booktitle = {International Conference of the International Society for Terrain-Vehicle Systems,(ISTVS-11)},
+  title     = {Development of a real and simulation testbed for legged robot soil interaction},
+  year      = {2011},
+  pages     = {110--116},
+  groups    = {Neural Netwaork based, Ground_interation_model},
+}
+
+@Article{Taheri2015,
+  author   = {Sh. Taheri and C. Sandu and S. Taheri and E. Pinto and D. Gorsich},
+  journal  = {Journal of Terramechanics},
+  title    = {A technical survey on Terramechanics models for tire–terrain interaction used in modeling and simulation of wheeled vehicles},
+  year     = {2015},
+  issn     = {0022-4898},
+  pages    = {1-22},
+  volume   = {57},
+  abstract = {Accurate and efficient tire models for deformable terrain operations are essential for performing vehicle simulations. A direct application of an on-road tire model to simulate tire behavior on a deformable terrain such as soft soil is not possible. The methods for modeling and evaluation of performance of the wheeled vehicles on deformable terrains are influenced by different terrain properties in addition to design and operational parameters. These methods are ranged from very simple empirical methods to highly complex finite element methods. This survey covers the most used models that have been developed for wheeled vehicles in off-road applications. The emphasize is on the models that have made a significant contribution in advancement of techniques for characterizing soil, tire, soil–tire interaction, experimental analysis, model parameterization and model validation. A description is given for selected studies to familiarize the reader with the general terminologies, formulations and modeling approaches. More importantly, two summary tables are given for three groups of models in which the overall features of each model are reviewed and compared to other models. These tables can be used to understand the general picture of the available techniques, and facilitate selecting the appropriate model for future applications.},
+  doi      = {https://doi.org/10.1016/j.jterra.2014.08.003},
+  groups   = {Introduction},
+  keywords = {Wheeled vehicle, Terramechanics, Off-road, Deformable terrain, Tire model, Soil, Parameterization, Mobility},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0022489814000664},
+}
+
+@Article{Zheng2018,
+  author   = {Junqiang Zheng and Haibo Gao and Baofeng Yuan and Zhen Liu and Haitao Yu and Liang Ding and Zongquan Deng},
+  journal  = {Mechanism and Machine Theory},
+  title    = {Design and terramechanics analysis of a Mars rover utilising active suspension},
+  year     = {2018},
+  issn     = {0094-114X},
+  pages    = {125-149},
+  volume   = {128},
+  abstract = {Wheeled rovers have a limited ability to traverse soft terrains and climb loose slopes. This study proposes a wheel-step rover with a modified active rocker-bogie suspension. The rocker and differential shaft fixed to the rocker are divided into three parts and reconnected via a novel angle-adjusting mechanism. The mechanism, which is driven by a single motor, widens and narrows the angle between the two rocker parts periodically to generate a wheel-step motion. Moreover, it adjusts the angle between a rocker part and differential shaft part to keep the bottom side of the rover body parallel to the ground. When fully stretched, the suspension lowers the bottom side horizontally to the lander platform. The mechanism also cooperates with a brake added between a rocker part and bogie to lift the sunken wheels separately. The strategies of wheel-step motion, wheel lifting, and suspension folding/unfolding are practicable as validated by prototype tests. Experiments show that the active suspension considerably enhances the rover's ability to escape from a dune or a crater. The proposed suspension is an important attempt in improving the design of Chinese Mars rovers.},
+  doi      = {https://doi.org/10.1016/j.mechmachtheory.2018.05.002},
+  groups   = {Introduction},
+  keywords = {Angle-adjusting mechanism, Planetary gear train, Active suspension, Mars rover},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0094114X1830171X},
+}
+
+@Article{Dirk2007,
+  author    = {Dirk, Spenneberg and Frank, Kirchner},
+  journal   = {Climbing and Walking Robots: towards New Applications},
+  title     = {The bio-inspired scorpion robot: design, control \& lessons learned},
+  year      = {2007},
+  groups    = {Robot, Introduction},
+  publisher = {IntechOpen},
+}
+
+@InProceedings{Spenneberg2005,
+  author       = {Spenneberg, Dirk and Albrecht, Martin and Backhaus, Till and Hilljegerdes, Jens and Kirchner, Frank and Strack, Andreas and Zschenker, Heiko},
+  booktitle    = {Proceedings of 8th International Symposium iSAIRAS},
+  title        = {Aramies: A four-legged climbing and walking robot},
+  year         = {2005},
+  organization = {Citeseer},
+  groups       = {Introduction, Robot},
+}
+
+@Article{Cruse1998,
+  author   = {Holk Cruse and Thomas Kindermann and Michael Schumm and Jeffrey Dean and Josef Schmitz},
+  journal  = {Neural Networks},
+  title    = {Walknet—a biologically inspired network to control six-legged walking},
+  year     = {1998},
+  issn     = {0893-6080},
+  number   = {7},
+  pages    = {1435-1447},
+  volume   = {11},
+  abstract = {To investigate walking we perform experimental studies on animals in parallel with software and hardware simulations of the control structures and the body to be controlled. Therefore, the primary goal of our simulation studies is not so much to develop a technical device, but to develop a system which can be used as a scientific tool to study insect walking. To this end, the animat should copy essential properties of the animals. In this review, we will first describe the basic behavioral properties of hexapod walking, as the are known from stick insects. Then we describe a simple neural network called Walknet which exemplifies these properties and also shows some interesting emergent properties. The latter arise mainly from the use of the physical properties to simplify explicit calculations. The model is simple too, because it uses only static neuronal units. Finally, we present some new behavioral results.},
+  doi      = {https://doi.org/10.1016/S0893-6080(98)00067-7},
+  groups   = {Introduction, Robot},
+  keywords = {Walking, Leg coordination, Positive feedback, Six-legged robot, Stick insect, Situatedness, Decentralized control},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0893608098000677},
+}
+
+@Article{Fabisch2020,
+  author    = {Fabisch, Alexander and Langosz, Malte and Kirchner, Frank},
+  journal   = {International Journal of Advanced Robotic Systems},
+  title     = {Bolero: Behavior optimization and learning for robots},
+  year      = {2020},
+  number    = {3},
+  pages     = {1729881420913741},
+  volume    = {17},
+  groups    = {Software_platform},
+  publisher = {SAGE Publications Sage UK: London, England},
+}
+
+@Article{Baeck1993,
+  author   = {Bäck, Thomas and Schwefel, Hans-Paul},
+  journal  = {Evolutionary Computation},
+  title    = {An Overview of Evolutionary Algorithms for Parameter Optimization},
+  year     = {1993},
+  issn     = {1063-6560},
+  month    = {March},
+  number   = {1},
+  pages    = {1-23},
+  volume   = {1},
+  abstract = {Three main streams of evolutionary algorithms (EAs), probabilistic optimization algorithms based on the model of natural evolution, are compared in this article: evolution strategies (ESs), evolutionary programming (EP), and genetic algorithms (GAs). The comparison is performed with respect to certain characteristic components of EAs: the representation scheme of object variables, mutation, recombination, and the selection operator. Furthermore, each algorithm is formulated in a high-level notation as an instance of the general, unifying basic algorithm, and the fundamental theoretical results on the algorithms are presented. Finally, after presenting experimental results for three test functions representing a unimodal and a multimodal case as well as a step function with discontinuities, similarities and differences of the algorithms are elaborated, and some hints to open research questions are sketched.},
+  doi      = {10.1162/evco.1993.1.1.1},
+  groups   = {Genetic_algorithm},
+}
+
+@Article{Eiben1999,
+  author   = {Eiben, A.E. and Hinterding, R. and Michalewicz, Z.},
+  journal  = {IEEE Transactions on Evolutionary Computation},
+  title    = {Parameter control in evolutionary algorithms},
+  year     = {1999},
+  issn     = {1941-0026},
+  month    = {July},
+  number   = {2},
+  pages    = {124-141},
+  volume   = {3},
+  abstract = {The issue of controlling values of various parameters of an evolutionary algorithm is one of the most important and promising areas of research in evolutionary computation: it has a potential of adjusting the algorithm to the problem while solving the problem. In the paper we: 1) revise the terminology, which is unclear and confusing, thereby providing a classification of such control mechanisms, and 2) survey various forms of control which have been studied by the evolutionary computation community in recent years. Our classification covers the major forms of parameter control in evolutionary computation and suggests some directions for further research.},
+  doi      = {10.1109/4235.771166},
+  groups   = {Genetic_algorithm},
+}
+
+@Article{BartzBeielstein2014,
+  author   = {Bartz-Beielstein, Thomas and Branke, Jürgen and Mehnen, Jörn and Mersmann, Olaf},
+  journal  = {WIREs Data Mining and Knowledge Discovery},
+  title    = {Evolutionary Algorithms},
+  year     = {2014},
+  number   = {3},
+  pages    = {178-195},
+  volume   = {4},
+  abstract = {Abstract Evolutionary algorithm (EA) is an umbrella term used to describe population-based stochastic direct search algorithms that in some sense mimic natural evolution. Prominent representatives of such algorithms are genetic algorithms, evolution strategies, evolutionary programming, and genetic programming. On the basis of the evolutionary cycle, similarities and differences between these algorithms are described. We briefly discuss how EAs can be adapted to work well in case of multiple objectives, and dynamic or noisy optimization problems. We look at the tuning of algorithms and present some recent developments coming from theory. Finally, typical applications of EAs to real-world problems are shown, with special emphasis on data-mining applications. WIREs Data Mining Knowl Discov 2014, 4:178–195. doi: 10.1002/widm.1124 This article is categorized under: Algorithmic Development > Spatial and Temporal Data Mining Fundamental Concepts of Data and Knowledge > Knowledge Representation},
+  doi      = {https://doi.org/10.1002/widm.1124},
+  eprint   = {https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.1124},
+  groups   = {Genetic_algorithm},
+  url      = {https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1124},
+}
+
+@Article{Streichert2002,
+  author    = {Streichert, Felix},
+  journal   = {paper to be presented Apr},
+  title     = {Introduction to evolutionary algorithms},
+  year      = {2002},
+  volume    = {4},
+  groups    = {Genetic_algorithm},
+  publisher = {Citeseer},
+}
+
+@Article{Jekel2019,
+  author   = {Jekel, Charles F. and Venter, Gerhard and Venter, Martin P. and Stander, Nielen and Haftka, Raphael T.},
+  journal  = {International Journal of Material Forming},
+  title    = {Similarity measures for identifying material parameters from hysteresis loops using inverse analysis},
+  year     = {2019},
+  issn     = {1960-6214},
+  number   = {3},
+  pages    = {355--378},
+  volume   = {12},
+  abstract = {Sum-of-square based error formulations may be difficult to implement on an inverse analysis consisting of multiple tension-compression hysteresis loops. Five alternative measures of similarity between curves are investigated as useful tools to help identify parameters from hysteresis loops with inverse analyses. A new algorithm is presented to calculate the area between curves. Four additional methods are presented from literature, which include the Partial Curve Mapping value, discrete Fr{\'e}chet distance, Dynamic Time Warping, and Curve Length approach. These similarity measures are compared by solving a non-linear regression problem resembling a single load-unload cycle. The measures are then used to solve more complicated inverse analysis, where material parameters are identified for a kinematic hardening transversely anisotropic material model. The inverse analysis finds material parameters such that a non-linear FE model reproduces the behavior from five experimental hysteresis loops. Each method was shown to find useful parameters for these problems, and should be considered a viable alternative when sum-of-square based methods may be difficult to implement. It is important to consider multiple similarity measures in cases when it is impossible to obtain a perfect match.},
+  doi      = {10.1007/s12289-018-1421-8},
+  groups   = {Trajectory_metrics},
+  url      = {https://doi.org/10.1007/s12289-018-1421-8},
+}
+
+@Article{10.1145/2782759.2782767,
+  author     = {Toohey, Kevin and Duckham, Matt},
+  journal    = {SIGSPATIAL Special},
+  title      = {Trajectory Similarity Measures},
+  year       = {2015},
+  month      = {may},
+  number     = {1},
+  pages      = {43–50},
+  volume     = {7},
+  abstract   = {Storing, querying, and analyzing trajectories is becoming increasingly important, as the availability and volumes of trajectory data increases. One important class of trajectory analysis is computing trajectory similarity. This paper introduces and compares four of the most common measures of trajectory similarity: longest common subsequence (LCSS), Fr\'{e}chet distance, dynamic time warping (DTW), and edit distance. These four measures have been implemented in a new open source R package, freely available on CRAN [19]. The paper highlights some of the differences between these four similarity measures, using real trajectory data, in addition to indicating some of the important emerging applications for measurement of trajectory similarity.},
+  address    = {New York, NY, USA},
+  doi        = {10.1145/2782759.2782767},
+  groups     = {Trajectory_metrics},
+  issue_date = {March 2015},
+  numpages   = {8},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/2782759.2782767},
+}
+
+@Article{HELMUT1995,
+  author   = {ALT, HELMUT and GODAU, MICHAEL},
+  journal  = {International Journal of Computational Geometry \& Applications},
+  title    = {Computing the Fréchet distance between two polygonal curves},
+  year     = {1995},
+  number   = {01n02},
+  pages    = {75-91},
+  volume   = {05},
+  abstract = {As a measure for the resemblance of curves in arbitrary dimensions we consider the so-called Fréchet-distance, which is compatible with parametrizations of the curves. For polygonal chains P and Q consisting of p and q edges an algorithm of runtime O(pq log(pq)) measuring the Fréchet-distance between P and Q is developed. Then some important variants are considered, namely the Fréchet-distance for closed curves, the nonmonotone Fréchet-distance and a distance function derived from the Fréchet-distance measuring whether P resembles some part of the curve Q.},
+  doi      = {10.1142/S0218195995000064},
+  eprint   = {https://doi.org/10.1142/S0218195995000064},
+  groups   = {Trajectory_metrics},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Genetic_algorithm\;0\;1\;0xff0000ff\;\;\;;
+1 StaticGroup:Ground_interation_model\;0\;1\;0x800080ff\;\;\;;
+2 StaticGroup:Analytical approach\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Legged Robot\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Wheeled Robot\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Neural Netwaork based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Introduction\;0\;1\;0x00ff00ff\;\;\;;
+1 StaticGroup:Robot\;0\;1\;0x0000ffff\;\;\;;
+1 StaticGroup:Software_platform\;0\;1\;0xffff00ff\;\;\;;
+1 StaticGroup:Trajectory_metrics\;0\;1\;0x008080ff\;\;\;;
+1 StaticGroup:Websites\;0\;1\;0x330033ff\;\;\;;
+}
